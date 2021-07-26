@@ -1,55 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style1.css">
-    
-    <title>My CV</title>
-</head>
-<body>
+ <head>
+  <meta charset="utf-8">
+  <title>Фреймы</title>
+  <style>
+   body { margin: 0; /* Убираем отступы */ }
+   .sidebar, .content { 
+    position: absolute; /* Абсолютное позиционирование */
+    overflow: auto; /* Полосы прокрутки при необходимости */
+    padding: 10px; /* Поля вокруг текста */
+    top: 61px; /* Расстояние от верхнего края */
+    bottom: 0; /* Расстояние от нижнего края */
+   }
+   header {
+    height: 60px; /* Высота */
+    background: #FEDFC0; /* Цвет фона */
+    border-bottom: 1px solid #7B5427; /* Линия снизу */
+   }
+   header h1 { 
+    line-height: 60px; /* Выравниваем по середине */
+    margin: 0 10px; /* Сдвигаем заголовок */
+   }
+   .sidebar { 
+    width: 200px; /* Ширина */
+    background: #ECF5E4; /* Цвет фона */
+    border-right: 1px solid #231F20; /* Линия справа */
+    height: 800px;
+   }
+   .content {
+    left: 221px; /* Расстояние от левого края */ 
+    right: 0; /* Расстояние справа */
+    height: 800px;
+   }
+   img {
+       width: 150px;
+   }
+   footer{
+       position: absolute;
+       width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 30px;
+        top: 800px;
+        text-align: center;
 
-        <div class="container">
-                <img src="123.jpg" alt="" class="photo" width="200px">
-               <H1>Anatoly Rack</H1>
-               <br>
-               <h2>Junior Frontend Developer</h2>
-               <br>
-               <h3>rack.anatoly@gmail.com | +48 792 725 240 | Gdansk, Poland</h3>
-               <br>
-               <p>I’m an enthusiastic and detail-oriented Frontend 
-                   Software Engineer seeking an entry-level position 
-                   with Company to use my skills in coding, troubleshooting
-                    complex problems, and assisting in the timely completion of projects.</p>
-                    <br>
-                    <h2>Education</h2>
-                    <br>
-                    <p>Yanka Kupala University 2011-2018</p>
-                    <br>
-                    <h2>Skills</h2>
-                    <ul>
-                        <li>HTML/CSS3</li>
-                        <li>Javascript/ES5/ES6</li>
-                        <li>Node.JS</li>
-                        <li>React</li>
-                    </ul>
-                    <br>
-                    <h2>Experience</h2>
-                    <br>
-                    <p>Training in online school from the company EPAM</p>
-                    <br>
-                    <h2>Languages</h2>
-                    <ul>
-                        <li>Russian - Native</li>
-                        <li>English - Pre-Intermediate</li>
-                        <li>Polish - Pre-Intermediate</li>
-                    </ul>
-            
-        </div>
-        <footer>
-            <a href="https://github.com/RackAnatoly/">GitHub</a>| 2021 | <a href="https://rs.school/js/"> <img src="rs_school_js.svg" width="50px" alt=""></a>
-        </footer>
-    
-        
-    
-</body>
+   }
+   .pisc{
+       width: 50px;
+   }
+  </style>
+ </head>
+ <body>
+  <header><h1>Anatoli Rak</h1></header>
+  <section class="sidebar">
+      <img src="123.jpg" alt="">
+   <h2>Contacts</h2>
+       <ul>
+           <li>rack.anatoly@gmail.com</li>
+           <li>+48 792 725 240 </li>
+           <li>Gdansk, Poland</li>
+           
+       </ul>
+  </section>
+  <section class="content">
+      <h2>Contacts</h2>
+   
+   <h3>Education</h3>
+   <p>Yanka Kupala University 2011-2018</p>
+   <h3>Skils</h3>
+   <ul>
+       <li>HTML/CSS3</li>
+       <li>Javascript/ES5/ES6</li>
+       <li>Node.JS</li>
+       <li>React</li>
+   </ul>
+   <h3>Experience</h3>
+   <p>Training in online school from the company EPAM</p>
+   <h3>Languages</h3>
+   <ul>
+       <li>Russian - Native</li>
+       <li>English - Pre-Intermediate</li>
+       <li>Polish - Pre-Intermediate</li>
+   </ul>
+  </section>
+  <footer>
+    <a href="https://github.com/RackAnatoly/">GitHub</a>| 2021 | <a href="https://rs.school/js/"> <img class="pisc" src="rs_school_js.svg"  alt=""></a>
+  </footer>
+ </body>
 </html>
